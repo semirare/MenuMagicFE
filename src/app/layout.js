@@ -1,7 +1,5 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import NavBar from "./navbar/page";
 
 export const metadata = {
   title: "MenuMagic",
@@ -10,8 +8,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="h-full">
+      <body className="h-full w-full flex flex-col">
+        <NavBar />
+        <main className="flex-1 flex flex-col">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }

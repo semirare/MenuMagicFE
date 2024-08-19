@@ -26,7 +26,7 @@ const Recipe = ({ params }) => {
 
     return (
         loading ? <div>Loading...</div> :
-            <div className="h-[100vh] flex-col bg-white">
+            <div className="flex-1 flex flex-col bg-white">
                 <div className="text-4xl justify-center my-2">{recipe.name}</div>
                 <div id="recipe" className="flex-col gap-2">
                     {recipe.ingredients?.map((ingredient) => (

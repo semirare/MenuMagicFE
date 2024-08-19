@@ -7,7 +7,7 @@ import Recipes from "./recipes/page";
 const Home = () => {
 
   return (
-    <div className="h-[100vh] flex-col bg-white">
+    <div className="flex-1 flex flex-col bg-white">
       <Recipes />
     </div>
   );
