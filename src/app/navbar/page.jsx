@@ -11,7 +11,7 @@ import Link from "next/link";
 
 export const NavBar = () => {
     return (
-        <NavigationMenu>
+        <NavigationMenu className='h-[5vw]'>
             <NavigationMenuList className="bg-slate-500 w-[100vw] h-[5vw]">
                 <NavigationMenuItem>
                     <Link href="/" className="bg-blue-500" legacyBehavior passHref>
